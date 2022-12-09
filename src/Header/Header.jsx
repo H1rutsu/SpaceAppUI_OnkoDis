@@ -1,17 +1,20 @@
 import ReactFullpage from "@fullpage/react-fullpage";
 import { NavLink } from "react-router-dom";
-import ModalRecord from "../Modal/Modal";
+import ModalSubmit from "../ModalSubmit/ModalSubmit";
 import ModelFind from "../ModelFind/ModelFind";
 import styles from "./Header.module.scss";
 import { useState, useEffect } from "react";
 
 const Header = () => {
   const [modalVis, setModalVis] = useState(false);
+  const [modalFindVis, setModalFindVis] = useState(false);
 
-  useEffect(() => {}, [modalVis]);
+  useEffect(() => {}, [modalVis, modalFindVis]);
   return (
     <>
       <ModelFind visible={modalVis} setVisible={setModalVis} />
+      <ModalSubmit visible={modalFindVis} setVisible={setModalFindVis} />
+
       <div className={styles.header}>
         <NavLink to="/">
           <img src="/images/logo.png" className={styles.header_logo_icon} />
@@ -57,7 +60,9 @@ const Header = () => {
           <p className={styles.header_contactsBlock_phone}>8 (8452) 38-44-28</p>
           <p className={styles.header_contactsBlock_mail}>saratov@ood2.ru</p>
         </div>
-        <ModalRecord />
+        <button onClick={() => setModalFindVis(true)} className="enroll">
+          Записаться
+        </button>
       </div>
     </>
   );

@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./ModelFind.module.scss";
+import { useState, useEffect } from "react";
 
 function ModelFind({ visible, setVisible }) {
   return (

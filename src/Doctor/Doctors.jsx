@@ -1,7 +1,7 @@
 function Doctors() {
   return (
     <div className="doctors">
-      <div>
+      <div className="d_h">
         <div className="d_t">Фамилия врача начинается на...</div>
         <div className="doctors_info">
           <ul className="doctor_ul">

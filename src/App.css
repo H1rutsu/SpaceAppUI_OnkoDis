@@ -79,8 +79,6 @@ body {
     font-size: 20px;
     outline: none;
     padding: 10px 15px;
-    margin-bottom: 100px;
-    margin-left: 100px;
     user-select: none;
     border:none;
     border-bottom:1px solid #0C424F;
@@ -91,6 +89,7 @@ body {
     border: 0px;
     width: 233px;
     min-height: 56px;
+    background-color: #C4413A;
     color: white;
     font-family: 'Montserrat';
     font-style: normal;
@@ -224,11 +223,20 @@ body {
 }
 
 .info_find_input{
+    margin-left: 40px;
     background-color: #ebebeb;
-    color: black;
     height: 30px;
-    font-size: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #444444;
     border-bottom:1px solid #0C424F !important;
+}
+
+.d_h{
+    width: 85%;
 }
 
 .d_t{
